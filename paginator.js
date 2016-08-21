@@ -490,21 +490,25 @@
     
     function glob_angular(data){
     
-        var el = document.querySelector('[ng-app=tuijian]');
+        var el = document.querySelector('[ng-app=sample]');
         
         var scope = angular.element(el).scope();
         
         scope.show = data;
+        
+        //$scope.show storage the page data,so every page.show() execute,the page will change the data;
     
     }
     
     function glob_angular_child(data){
     
-        var el = document.querySelector('[ng-app=tuijian]');
+        var el = document.querySelector('[ng-app=sample]');
         
         var scope = angular.element(el).scope();
         
         scope.details = data;
+        
+        //$scope.details storage the another page data,so every pageChild.show() execute,the page will change the data;
     
     }
     
